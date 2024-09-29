@@ -2,6 +2,27 @@ nav {
    background-color: steelblue; 
    padding: 10px;
 }
+nav ul {
+    list-style-type: none; /* Removes bullets poins*/
+    padding:0;
+    margin: 0;
+    display: flex; /*makes the list items sit next to each other*/
+    justify-content: flex-end; /*Aligns the link to the left*/
+
+}
+nav ul li {
+    margin-left: 20px; /*this is to add some space between the links*/
+}
+nav ul li a:hover {
+    color: #007bff; /* Change the color on hover*/
+}
+
+nav ul li a {
+    text-decoration: none; /*this removes the underline */
+    color: #333; /*this is to sets the link color */
+}
+
+
 
 nav a {
     color: white;
@@ -13,7 +34,7 @@ h1 {
   color: steelblue;  
 }
 
-img {
+main img {
     width: 150px;
     height: auto;
     border: 1px solid steelblue;
@@ -28,4 +49,37 @@ p {
 footer {
     text-align: center;
     margin: 0 auto; /* Optional: Centers the footer element horizontally */
+}
+
+main {
+    max-width: 840px;    
+
+}
+aside {
+    width: 20rem;
+    margin: 1rem;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    padding: 1rem;
+    background-color: #eee;
+    color: #333;
+    text-align: center;
+
+}
+
+aside img {
+    width: 200px;
+    height: auto;
+}
+main img {
+    width: 150px;
+    height: auto;
+}
+
+p {
+    padding: 0;
+}
+footer {
+    margin-top:15px;
+    border-top: 1px solid #000;
+    text-align: center;
 }
