@@ -58,7 +58,7 @@ main img {
     height: auto;
     border: 1px solid steelblue;
     padding: 2px;
-    box-sizing: 0 0 30px gray;
+    /* box-sizing: 0 0 30px gray; */
     float: right;
     margin: 0 0 1rem 1rem;
 
@@ -93,7 +93,7 @@ footer {
 
 }
 
-/* Class Selector */
+/* Class Selectors */
 .box {
     margin: 1rem;
     border: 1px solid rgba(0, 0, 0, .1);
