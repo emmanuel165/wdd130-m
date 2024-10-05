@@ -1,47 +1,56 @@
-:root {
-    --heading-background-color: #f06;
-    --heading-text-color: #333;
-    --heading-font: 'Montserrat', Helvetica, sans-serif;
-    --padding: 1rem;
-    --border: 1px solid rgba(0,0,0,0.1);
-    }
-
-
+/* Universal Selector for consistent margin and padding */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-size: 16px;
+    font-family: Roboto, Arial, sans-serif;
+}
 
 nav {
-   background-color: steelblue; 
-   padding: 10px;
-}
-nav ul {
-    list-style-type: none; /* Removes bullets poins*/
-    padding:0;
-    margin: 0;
-    display: flex; /*makes the list items sit next to each other*/
-    justify-content: flex-end; /*Aligns the link to the left*/
+    background-color: steelblue;
+    padding: 10px;
 
 }
-nav ul li {
-    margin-left: 20px; /*this is to add some space between the links*/
-}
-nav ul li a:hover {
-    color: #007bff; /* Change the color on hover*/
-}
-
-nav ul li a {
-    text-decoration: none; /*this removes the underline */
-    color: #333; /*this is to sets the link color */
-}
-
-
 
 nav a {
     color: white;
+    padding: 10px;
     display: block;
+}
+nav ul {
+    list-style-type: none; 
+    padding: 0;
+    margin: 0;
+    display: flex; 
+    justify-content: flex-end;
+}
+
+nav ul li {
+    margin-left: 20px;
+}
+
+nav ul li a {
+    text-decoration: none; 
+    color: white;
     padding: 20px;
 }
 
+nav ul li a:hover {
+    color: #007bff;
+}
+
 h1 {
-  color: steelblue;  
+    color: steelblue;
+    padding: 5rem;
+
+}
+
+main {
+    max-width: 640px;
+
 }
 
 main img {
@@ -49,47 +58,51 @@ main img {
     height: auto;
     border: 1px solid steelblue;
     padding: 2px;
-    box-shadow: 0 0 30px gray;
+    box-sizing: 0 0 30px gray;
+    float: right;
+    margin: 0 0 1rem 1rem;
+
 }
 
 p {
-    padding: 10px;
-}
-
-footer {
-    text-align: center;
-    margin: 0 auto; /* Optional: Centers the footer element horizontally */
-}
-
-main {
-    max-width: 840px;    
-
-}
-aside {
-    width: 20rem;
     margin: 1rem;
-    border: 1px solid rgba(0, 0, 0, 0.2);
-    padding: 1rem;
-    background-color: #eee;
-    color: #333;
-    text-align: center;
+}
 
+aside {
+    width: 20em;
+    text-align: center;
+    position: relative;
 }
 
 aside img {
     width: 200px;
     height: auto;
+
 }
-main img {
-    width: 150px;
-    height: auto;
+aside h2 {
+    position: absolute;
+    top: 25px;
+    left: 85px;
+    /* margin: 25%; */
 }
 
-p {
-    padding: 0;
-}
 footer {
-    margin-top:15px;
+    margin-top: 1em;
     border-top: 1px solid #000;
     text-align: center;
+
+}
+
+/* Class Selector */
+.box {
+    margin: 1rem;
+    border: 1px solid rgba(0, 0, 0, .1);
+    padding: 1rem;
+    background-color: #eee;
+    color: #000;
+
+}
+
+.indent {
+    padding-left: 2rem;
 }
