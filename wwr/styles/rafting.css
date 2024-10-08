@@ -1,0 +1,171 @@
+/* CSS Variables */
+:root {
+    --primary-color: #1e3d58; /* Deep blue-green */
+    --secondary-color: #6b8e23; /* Olive green */
+    --font-color: #333; /* Dark grey for text */
+    --heading-font: 'Merriweather', serif;
+    --body-font: 'Roboto', sans-serif;
+}
+
+/* General Styles */
+body {
+    font-family: var(--body-font);
+    color: var(--font-color);
+    margin: 0;
+    padding: 0;
+    background-color: #f5f5f5; /* Light background */
+}
+
+header {
+    background-color: var(--primary-color);
+    padding: 15px;
+    text-align: center;
+}
+
+header .logo {
+    max-width: 120px;
+}
+
+nav a {
+    margin: 0 15px;
+    color: white;
+    text-decoration: none;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+.hero {
+    position: relative;
+    text-align: center;
+    color: white;
+}
+
+.hero-img {
+    width: 100%;
+    height: auto;
+}
+
+.hero h1 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 3rem;
+    font-family: var(--heading-font);
+    color: white;
+}
+
+article {
+    position: absolute;
+    top: 65%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(0, 0, 0, 0.6); /* Transparent background */
+    padding: 20px;
+    color: white;
+}
+
+.article-img {
+    float: right;
+    max-width: 150px;
+    margin-left: 20px;
+}
+
+/* Section Styles */
+section h2 {
+    color: var(--secondary-color);
+    font-family: var(--heading-font);
+    margin-bottom: 10px;
+}
+
+/* Styling the rafting gallery section 
+.rafting-gallery {
+    padding: 40px 20px;
+    background-color: var(--accent1-color);
+    text-align: center;
+}
+
+.rafting-gallery h2 {
+    font-family: var(--heading-font);
+    font-size: 36px;
+    color: var(--primary-color);
+    margin-bottom: 20px;
+}
+
+/* Grid styling for images 
+.rafting-gallery img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    margin-bottom: 20px;
+}
+
+/* Create a responsive grid for images 
+.rafting-gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    grid-gap: 20px;
+    padding: 40px 0;
+}
+
+.rafting-gallery img:hover {
+    transform: scale(1.05);
+    transition: transform 0.3s ease-in-out;
+}
+
+/* Section styling */
+.rafting-gallery {
+    padding: 40px 20px;
+    background-color: var(--accent1-color);
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    grid-gap: 20px;
+    justify-items: center; /* Ensures content is centered */
+    text-align: center;
+}
+
+/* Styling for the h2 element */
+.rafting-gallery h2 {
+    font-family: var(--heading-font);
+    font-size: 36px;
+    color: var(--primary-color);
+    grid-column: span 5; /* Makes h2 span across the grid to align with images */
+    margin-bottom: 20px;
+}
+
+/* Grid styling for images */
+.rafting-gallery img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    margin-bottom: 20px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.rafting-gallery img:hover {
+    transform: scale(1.05); /* Interactive hover effect */
+}
+
+/* Footer */
+footer {
+    padding: 20px;
+    background-color: var(--primary-color);
+    text-align: center;
+    color: white;
+}
+
+/* footer {
+    background-color: var(--primary-color);
+    color: white;
+    padding: 10px;
+    text-align: center;
+} */
+
+footer .social-links img {
+    width: 30px;
+    margin: 0 10px;
+}
