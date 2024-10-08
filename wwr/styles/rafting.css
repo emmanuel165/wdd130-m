@@ -5,6 +5,7 @@
     --font-color: #333; /* Dark grey for text */
     --heading-font: 'Merriweather', serif;
     --body-font: 'Roboto', sans-serif;
+    --accent1-color: #f5f5f5; /* Light background color */
 }
 
 /* General Styles */
@@ -13,7 +14,7 @@ body {
     color: var(--font-color);
     margin: 0;
     padding: 0;
-    background-color: #f5f5f5; /* Light background */
+    background-color: var(--accent1-color);
 }
 
 header {
@@ -36,6 +37,7 @@ nav a:hover {
     text-decoration: underline;
 }
 
+/* Hero Section */
 .hero {
     position: relative;
     text-align: center;
@@ -73,76 +75,37 @@ article {
     margin-left: 20px;
 }
 
-/* Section Styles */
+/* Section Heading */
 section h2 {
     color: var(--secondary-color);
     font-family: var(--heading-font);
     margin-bottom: 10px;
-}
-
-/* Styling the rafting gallery section 
-.rafting-gallery {
-    padding: 40px 20px;
-    background-color: var(--accent1-color);
     text-align: center;
 }
 
-.rafting-gallery h2 {
-    font-family: var(--heading-font);
-    font-size: 36px;
-    color: var(--primary-color);
-    margin-bottom: 20px;
-}
-
-/* Grid styling for images 
-.rafting-gallery img {
-    width: 100%;
-    height: auto;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-    margin-bottom: 20px;
-}
-
-/* Create a responsive grid for images 
-.rafting-gallery {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-    grid-gap: 20px;
-    padding: 40px 0;
-}
-
-.rafting-gallery img:hover {
-    transform: scale(1.05);
-    transition: transform 0.3s ease-in-out;
-}
-
-/* Section styling */
+/* Rafting Gallery Section */
 .rafting-gallery {
     padding: 40px 20px;
     background-color: var(--accent1-color);
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
     grid-gap: 20px;
-    justify-items: center; /* Ensures content is centered */
-    text-align: center;
+    justify-items: center;
 }
 
-/* Styling for the h2 element */
 .rafting-gallery h2 {
     font-family: var(--heading-font);
     font-size: 36px;
     color: var(--primary-color);
-    grid-column: span 5; /* Makes h2 span across the grid to align with images */
+    grid-column: span 5; /* Span across all grid columns */
     margin-bottom: 20px;
 }
 
-/* Grid styling for images */
 .rafting-gallery img {
     width: 100%;
     height: auto;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-    margin-bottom: 20px;
     transition: transform 0.3s ease-in-out;
 }
 
@@ -150,7 +113,7 @@ section h2 {
     transform: scale(1.05); /* Interactive hover effect */
 }
 
-/* Footer */
+/* Footer Styles */
 footer {
     padding: 20px;
     background-color: var(--primary-color);
@@ -158,14 +121,22 @@ footer {
     color: white;
 }
 
-/* footer {
-    background-color: var(--primary-color);
-    color: white;
-    padding: 10px;
-    text-align: center;
-} */
-
 footer .social-links img {
     width: 30px;
     margin: 0 10px;
+}
+
+/* Media Queries for Responsive Design */
+@media (max-width: 768px) {
+    .hero h1 {
+        font-size: 2.5rem;
+    }
+
+    .article-img {
+        display: none; /* Hide float image on smaller screens */
+    }
+
+    .rafting-gallery {
+        grid-template-columns: 1fr; /* Stack images on smaller screens */
+    }
 }
