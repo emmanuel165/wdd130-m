@@ -16,15 +16,17 @@
 </head>
 
 <body>
-    <!-- Header Section -->
-    
-    <header>
+    <!-- Header Section using CSS Grid -->
+    <header class="header-grid">
         <img src="images/Rapids_logo.webp" alt="Rafting Company Logo" class="logo">
+        <h1>White Water Rafting Co.</h1>
         <nav>
-            <a href="index.html">Home</a>
-            <a href="about.html">About Us</a>
-            <a href="trips.html">Trips</a>
-            <a href="contact.html">Contact</a>
+            <ul class="flex-nav">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="trips.html">Trips</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
         </nav>
     </header>
 
@@ -41,25 +43,43 @@
         </div>
 
         <!-- History Section -->
-        <section>
+        <section class="history">
             <h2>History</h2>
-            <p>Since 1998, White Water Rafting Co. has been taking adventurers on unforgettable trips down the most exhilarating rivers. Our commitment to safety and excitement has made us a leader in the rafting industry.</p>
+            <div class="history-content">
+                <p>Since 1998, White Water Rafting Co. has been taking adventurers on unforgettable trips down the most exhilarating rivers. Our commitment to safety and excitement has made us a leader in the rafting industry.</p>
+                <img src="images/history.webp" alt="Rafting History">
+            </div>
         </section>
 
         <!-- Adventure Awaits Section -->
-        <section class="rafting-galery">
+        <section class="rafting-gallery">
             <h2>Adventure Awaits You!</h2>
-            <img src="images/raft1.webp" alt="Rafting Adventure 1">
-            <img src="images/raft2.webp" alt="Rafting Adventure 2">
-            <img src="images/raft3.webp" alt="Rafting Adventure 3">
-            <img src="images/raft4.webp" alt="Rafting Adventure 4">
-            <img src="images/raft5.webp" alt="Rafting Adventure 5">
+            <figure>
+                <img src="images/raft1.webp" alt="Rafting Adventure 1">
+                <figcaption>Los Dientes del Diablo</figcaption>
+            </figure>
+            <figure>
+                <img src="images/raft2.webp" alt="Rafting Adventure 2">
+                <figcaption>Big Mallard</figcaption>
+            </figure>
+            <figure>
+                <img src="images/raft3.webp" alt="Rafting Adventure 3">
+                <figcaption>Half Day Adventure</figcaption>
+            </figure>
+            <figure>
+                <img src="images/raft4.webp" alt="Rafting Adventure 4">
+                <figcaption>Full Day Excursion</figcaption>
+            </figure>
+            <figure>
+                <img src="images/raft5.webp" alt="Rafting Adventure 5">
+                <figcaption>Rapid Rush</figcaption>
+            </figure>
         </section>
     </main>
 
     <!-- Footer Section -->
     <footer>
-        <p>&copy; 2024 White Water Rafting Co. | Designed by Owa-Emmanuel|wdd130</p>
+        <p>&copy; 2024 White Water Rafting Co. | Designed by Owa-Emmanuel | wdd130</p>
         <nav class="social-links">
             <a href="https://facebook.com">
                 <img src="images/facebook.webp" alt="Facebook">
